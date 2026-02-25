@@ -38,7 +38,7 @@
 
 ### Решение:
 
-[playbook](https://github.com/Alm798/playbook)
+[playbook](https://github.com/Alm798/ansible_04-role/tree/main/playbook)
 
 [vector-role](https://github.com//Alm798/vector-role)
 
