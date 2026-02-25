@@ -38,11 +38,11 @@
 
 ### Решение:
 
-[playbook](https://github.com/Ivan-Shkutov/ansible-04-role/tree/main/playbook)
+[playbook](https://github.com/Alm798/ansible_04-role/tree/main/playbook)
 
-[vector-role](https://github.com/Ivan-Shkutov/vector-role)
+[vector-role](https://github.com/Alm798/ansible_04-role/tree/main/vector-role)
 
-[lighthouse-role](https://github.com/Ivan-Shkutov/lighthouse-role)
+[lighthouse-role](https://github.com/Alm798/ansible_04-role/tree/main/lighthouse-role)
 
 
 ---
