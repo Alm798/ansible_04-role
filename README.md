@@ -43,6 +43,7 @@
 [vector-role](https://github.com//Alm798/vector-role)
 
 [lighthouse-role](https://github.com/Alm798/lighthouse-role/tree/main/lighthouse-role)
+
 [clickhouse-role](https://github.com/Alm798/clickhouse-role)
 
 ---
