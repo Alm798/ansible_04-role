@@ -1,19 +1,8 @@
-## Домашнее задание к занятию 4 «Работа с roles»
-
-### Подготовка к выполнению
-
-1. Необязательно. Познакомьтесь с LightHouse.
-
-2. Создайте два пустых публичных репозитория в любом своём проекте: vector-role и lighthouse-role.
-
-![1](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/1.png)
-
-![2](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/2.png)
-
-5. Добавьте публичную часть своего ключа к своему профилю на GitHub.
-
-### Основная часть
-
+Подготовка к выполнению
+Необязательно. Познакомьтесь с LightHouse.
+Создайте два пустых публичных репозитория в любом своём проекте: vector-role и lighthouse-role.
+Добавьте публичную часть своего ключа к своему профилю на GitHub.
+Основная часть
 Ваша цель — разбить ваш playbook на отдельные roles.
 
 Задача — сделать roles для ClickHouse, Vector и LightHouse и написать playbook для использования этих ролей.
@@ -22,77 +11,32 @@
 
 Что нужно сделать
 
-1. Создайте в старой версии playbook файл requirements.yml и заполните его содержимым:
+Создайте в старой версии playbook файл requirements.yml и заполните его содержимым:
 
-```
 ---
   - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
     scm: git
     version: "1.13"
     name: clickhouse 
-```
+При помощи ansible-galaxy скачайте себе эту роль.
 
-![3](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/5.png)
+Создайте новый каталог с ролью при помощи ansible-galaxy role init vector-role.
 
-2. При помощи ansible-galaxy скачайте себе эту роль.
+На основе tasks из старого playbook заполните новую role. Разнесите переменные между vars и default.
 
-![4](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/02.png)
+Перенести нужные шаблоны конфигов в templates.
 
-4. Создайте новый каталог с ролью при помощи ansible-galaxy role init vector-role.
+Опишите в README.md обе роли и их параметры. Пример качественной документации ansible role по ссылке.
 
-![5](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/04.png)
+Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
 
-6. На основе tasks из старого playbook заполните новую role. Разнесите переменные между vars и default.
+Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в requirements.yml в playbook.
 
-7. Перенести нужные шаблоны конфигов в templates.
+Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения roles с tasks.
 
-8. Опишите в README.md обе роли и их параметры. Пример качественной документации ansible role по ссылке.
+Выложите playbook в репозиторий.
 
-9. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
-
-10. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в requirements.yml в playbook.
-
-11. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения roles с tasks.
-
-12. Выложите playbook в репозиторий.
-
-![6](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/06.png)
-
-![7]- src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
-  scm: git
-  version: "1.13"
-  name: clickhouse
-
-- src: git@github.com:Alm798/vector-role.git
-  scm: git
-  version: "1.0.0"
-  name: vector_role
-
-- src: git@github.com:Alm798/lighthouse-role.git
-  scm: git
-  version: "1.0.0"
-  name: lighthouse_role
-
-- src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
-  scm: git
-  version: "1.13"
-  name: clickhouse
-
-- src: git@github.com:Alm798/vector-role.git
-  scm: git
-  version: "1.0.0"
-  name: vector_role
-
-- src: git@github.com:Alm798/lighthouse-role.git
-  scm: git
-  version: "1.0.0"
-  name: lighthouse_role)
-
-![9](https://github.com/Ivan-Shkutov/ansible-04-role/blob/main/08.png)
-
-13. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
-
----
+В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
 ### Решение:
 
